@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <VideoView
+        android:visibility="visible"
+        android:layout_width="329dp"
+        android:layout_height="177dp"
+        android:layout_x="31dp"
+        android:layout_y="95dp"
+        android:id="@+id/videoView" />
+
+    <Button
+        android:text="Seach Flight"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_x="34dp"
+        android:layout_y="300dp"
+        android:id="@+id/MainScreenButton_SeachFlight" />
+
+    <Button
+        android:text="My Mileage Points"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_x="34dp"
+        android:layout_y="350dp"
+        android:id="@+id/MainScreenButton_My" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_x="34dp"
+        android:layout_y="400dp"
+        android:id="@+id/MainScreenButton_Logout" />
+
+    <TextView
+        android:text="Main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="160dp"
+        android:layout_y="49dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="159dp"
+        android:layout_y="489dp"
+        android:id="@+id/zanZhuShang" />
+</AbsoluteLayout>

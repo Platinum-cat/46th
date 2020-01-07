@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Session1DataSet4" targetNamespace="http://tempuri.org/Session1DataSet4.xsd" xmlns:mstns="http://tempuri.org/Session1DataSet4.xsd" xmlns="http://tempuri.org/Session1DataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Session1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Session1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SunshineAirLine.Properties.Settings.GlobalReference.Default.Session1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CityTableAdapter" GeneratorDataComponentClassName="CityTableAdapter" Name="City" UserDataComponentName="CityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Session1ConnectionString (Settings)" DbObjectName="Session1.dbo.City" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CityName FROM dbo.City</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CityName" DataSetColumn="CityName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Session1DataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Session1DataSet4" msprop:Generator_UserDSName="Session1DataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="City" msprop:Generator_TableClassName="CityDataTable" msprop:Generator_TableVarName="tableCity" msprop:Generator_TablePropName="City" msprop:Generator_RowDeletingName="CityRowDeleting" msprop:Generator_RowChangingName="CityRowChanging" msprop:Generator_RowEvHandlerName="CityRowChangeEventHandler" msprop:Generator_RowDeletedName="CityRowDeleted" msprop:Generator_UserTableName="City" msprop:Generator_RowChangedName="CityRowChanged" msprop:Generator_RowEvArgName="CityRowChangeEvent" msprop:Generator_RowClassName="CityRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CityName" msprop:Generator_ColumnVarNameInTable="columnCityName" msprop:Generator_ColumnPropNameInRow="CityName" msprop:Generator_ColumnPropNameInTable="CityNameColumn" msprop:Generator_UserColumnName="CityName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

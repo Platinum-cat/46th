@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_flight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    tools:context="com.example.yf.sunshineairlines_android20.activity.SearchFlightActivity">
+
+    <TextView
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="Search Flight"
+        android:textSize="22sp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/tvSearchFlight"/>
+    <TextView
+        android:text="From:"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv1"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spFrom">
+    </Spinner>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="To:"
+        android:id="@+id/tv2"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spTo">
+    </Spinner>
+    <TextView
+        android:text="Cabin Type:"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv3"/>
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spCT">
+    </Spinner>
+    <TextView
+        android:text="Date:"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv4"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:focusable="false"
+            android:selectAllOnFocus="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:id="@+id/etDate" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/calendar"
+            android:id="@+id/ivDate" />
+    </TableRow>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btSearch"
+        android:text="Search"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btBack"
+        android:text="Back"
+        android:textAllCaps="false"/>
+</TableLayout>
